@@ -1,4 +1,115 @@
 
+/* ------------------------------ GENERAL ------------------------------ */
+
+:root {
+    box-sizing: border-box;
+
+/*  variables__colors */
+
+    --bg: #fff5da;
+    --primary_color: #2f1728;
+    --accent_first: #f86a70;
+    --accent_second: #f5b53a;
+
+/*  variables__font-sizes */
+
+    --bigger: 2.5rem;
+    --normal: 1.5rem;
+    --small: 1.1rem;
+}
+
+*, 
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/* ------------------------------ BODY ------------------------------ */
+
+body {    
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+    color: var(--primary_color);
+}
+
+/* ------------------------------ TYPOGRAPHY ------------------------------ */
+
+body {
+    font-family: 'Noto Serif', serif;
+    font-size: var(--normal);
+}
+
+h2 {
+    font-size: var(--bigger);
+    font-weight: 500;
+}
+
+a {
+    font-size: var(--small);
+}
+
+
+
+/* ------------------------------ HEADER ------------------------------ */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 2.5em;
+    cursor: pointer;
+    border: 2px solid var(--accent_second);
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+/* ------------------------------ MAIN ------------------------------ */
+
+.main {
+    margin-left: 20vw;
+    margin-top: 15vh;
+    margin-right: 30vw;
+}
+
+/* ------------------------------ ASIDE ------------------------------ */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 5vw;
+    bottom: 35vh;
+
+}
+
+.contacts__link {
+    margin: .5em;
+}
+
+.contacts__item {
+    margin: .35em;
+}
+
 .contacts__icon {
-    width: 1.5em;
+    width: 2em;
+    filter: grayscale(90%);
+}
+
+.contacts__icon:hover {
+    filter: none;
+    background-color: #fff;
+    padding: .2em;
+    border-radius: .5em;
+}
+
+.contacts__subtitles {
+    font-size: .75rem;
+    display: none;
 }

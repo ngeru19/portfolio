@@ -76,24 +76,38 @@ a {
     color: var(--accent_first);
 }
 
-/* ------------------------------ MAIN ------------------------------ */
+/* ------------------------------ CONTAINER ------------------------------ */
 
-.main {
-    margin-left: 20vw;
-    margin-top: 17.5vh;
-    margin-right: 30vw;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    margin: 0 auto;
+    border: red solid 1px;
+    padding: 1em 0;
 }
 
-.main__intro {
-    margin-bottom: 2em;
+/* ------------------------------ INTRO ------------------------------ */
+
+.intro__info {
+    margin-left: 2em;
 }
 
-.main__resume {
+.intro__img {
+    width: 100%;
+}
+
+.intro__resume {
     padding: 1em;
     background-color: var(--accent_first);
     color: #fff;
     border-radius: 1em;
 }
+
+/* ------------------------------ ABOUT ME ------------------------------ */
+
+
 
 /* ------------------------------ ASIDE ------------------------------ */
 
@@ -102,7 +116,7 @@ a {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    left: 5vw;
+    left: 4vw;
     bottom: 35vh;
 
 }
@@ -131,12 +145,18 @@ a {
     display: none;
 }
 
+/* ------------------------------ SECTION ------------------------------ */
+
+/* .controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4em;
+}
+
 .next__btn {
-    position: fixed;
-    right: 5vw;
-    bottom: 7.5vh;
+    margin-right: 4em;
     padding: .5em 2em;
     background-color: var(--primary_color);
     color: var(--bg);
     border-radius: 1em;
-}
+} */

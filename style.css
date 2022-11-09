@@ -105,12 +105,47 @@ a {
     border-radius: 1em;
 }
 
+/* ------------------------------ PROJECTS ------------------------------ */
+
+.projects {
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: 1px blue solid;
+}
+
+.projects__image {
+    width: 100%;
+    border-radius: .2em;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+.projects__container {
+    border: 1px red solid;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__description {
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+.projects__stack {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* ------------------------------ ABOUT ME ------------------------------ */
 
 .about__description {
     flex: 1 1 0px;
     font-size: var(--normal);
-    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .about__terminal {
@@ -261,24 +296,23 @@ a {
 
 
 :root {
-    --shadow-color: 0deg 0% 0%;
+    --shadow-color: 147deg 6% 51%;
     --shadow-elevation-low:
-      0.2px 0.1px 0.3px hsl(var(--shadow-color) / 0.08),
-      0.3px 0.2px 0.4px -1px hsl(var(--shadow-color) / 0.09),
-      0.7px 0.6px 1.1px -2px hsl(var(--shadow-color) / 0.11);
+      -0.2px 0.2px 0.4px hsl(var(--shadow-color) / 0),
+      -0.3px 0.4px 0.8px hsl(var(--shadow-color) / 0.25),
+      -0.6px 0.8px 1.5px hsl(var(--shadow-color) / 0.51);
     --shadow-elevation-medium:
-      0.2px 0.1px 0.3px hsl(var(--shadow-color) / 0.08),
-      0.6px 0.5px 0.9px -0.7px hsl(var(--shadow-color) / 0.09),
-      1.5px 1.2px 2.3px -1.3px hsl(var(--shadow-color) / 0.1),
-      3.6px 2.8px 5.5px -2px hsl(var(--shadow-color) / 0.12);
+      -0.2px 0.2px 0.4px hsl(var(--shadow-color) / 0),
+      -0.8px 1px 1.9px hsl(var(--shadow-color) / 0.2),
+      -1.6px 2px 3.8px hsl(var(--shadow-color) / 0.4),
+      -3.2px 4.1px 7.8px hsl(var(--shadow-color) / 0.6);
     --shadow-elevation-high:
-      0.1px 0.9px 0.8px hsl(var(--shadow-color) / 0.16),
-      0.3px 2.6px 2.3px -0.5px hsl(var(--shadow-color) / 0.15),
-      0.6px 5px 4.5px -1px hsl(var(--shadow-color) / 0.13),
-      1.1px 9.4px 8.4px -1.5px hsl(var(--shadow-color) / 0.12),
-      1.9px 16.9px 15.1px -2px hsl(var(--shadow-color) / 0.11),
-      3.2px 28.7px 25.6px -2.6px hsl(var(--shadow-color) / 0.09),
-      5.2px 46px 41px -3.1px hsl(var(--shadow-color) / 0.08),
-      7.9px 69.9px 62.3px -3.6px hsl(var(--shadow-color) / 0.06),
-      11.5px 101.7px 90.6px -4.1px hsl(var(--shadow-color) / 0.05);
+      -0.2px 0.2px 0.4px hsl(var(--shadow-color) / 0),
+      -1.7px 2.2px 4.2px hsl(var(--shadow-color) / 0.09),
+      -3.1px 3.9px 7.5px hsl(var(--shadow-color) / 0.18),
+      -4.6px 5.7px 11px hsl(var(--shadow-color) / 0.28),
+      -6.4px 8px 15.4px hsl(var(--shadow-color) / 0.37),
+      -8.8px 11.1px 21.2px hsl(var(--shadow-color) / 0.46),
+      -12.3px 15.4px 29.6px hsl(var(--shadow-color) / 0.55),
+      -16.9px 21.3px 40.8px hsl(var(--shadow-color) / 0.65);
   }

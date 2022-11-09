@@ -76,7 +76,7 @@ a {
     color: var(--accent_first);
 }
 
-/* ------------------------------ CONTAINER ------------------------------ */
+/* ------------------------------ PAGE CONTAINER ------------------------------ */
 
 .container {
     display: flex;
@@ -84,7 +84,7 @@ a {
     align-items: center;
     width: 78%;
     margin: 0 auto;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     padding: 1em 0;
 }
 
@@ -107,7 +107,105 @@ a {
 
 /* ------------------------------ ABOUT ME ------------------------------ */
 
+.about__description {
+    flex: 1 1 0px;
+    font-size: var(--normal);
+    margin-right: 1em;
+}
 
+.about__terminal {
+    flex: 1 1 0px;
+    font-size: 0.75rem;
+    /* box-shadow: var(--shadow-elevation-high); */
+    
+}
+
+.terminal__header {
+    background-color: #fff; /* C9D5E3 */
+    padding: .5em;
+    border-top-left-radius: .65em;
+    border-top-right-radius: .65em;
+    margin: 0 auto;
+    margin-top: 5em;   
+    display: flex;
+}
+
+.terminal__body {
+    background-color: #45485E;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: .5em;
+    font-size: 1.1rem;
+    border-bottom-left-radius: .65em;
+    border-bottom-right-radius: .65em;
+}
+
+.terminal__button {
+    border-radius: 50%;
+    padding: .4em;
+    border: none;
+    margin: .1em;
+}
+
+
+.terminal__button--red {
+    background-color: #f96256;
+    margin: .25em;
+}
+
+.terminal__button--yellow {
+    background-color: #fdbc3d;
+    margin: .25em;
+}
+
+.terminal__button--green {
+    background-color: #33c948;
+    margin: .25em;
+}
+
+.terminal__unit {
+    margin-top: 1em;
+    color: #f96256;
+    margin-top: 1.5em;
+}
+
+.terminal__unit__header {
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.terminal__unit__body {
+    color: #e7d184;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: .25em;
+}
+
+.terminal__unit__body > a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  
+#cursor {
+    background: white;
+    line-height: 1.2rem;
+    margin-left: .3em;
+    -webkit-animation: blink 0.9s infinite;
+    width: .3rem;
+    height: 1rem;
+}
+
+@-webkit-keyframes blink {
+    0% {background: #5a5d7a}
+    50% {background: #eaeff5}
+    100% {background: #5a5d7a}
+  }
 
 /* ------------------------------ ASIDE ------------------------------ */
 
@@ -160,3 +258,27 @@ a {
     color: var(--bg);
     border-radius: 1em;
 } */
+
+
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+      0.2px 0.1px 0.3px hsl(var(--shadow-color) / 0.08),
+      0.3px 0.2px 0.4px -1px hsl(var(--shadow-color) / 0.09),
+      0.7px 0.6px 1.1px -2px hsl(var(--shadow-color) / 0.11);
+    --shadow-elevation-medium:
+      0.2px 0.1px 0.3px hsl(var(--shadow-color) / 0.08),
+      0.6px 0.5px 0.9px -0.7px hsl(var(--shadow-color) / 0.09),
+      1.5px 1.2px 2.3px -1.3px hsl(var(--shadow-color) / 0.1),
+      3.6px 2.8px 5.5px -2px hsl(var(--shadow-color) / 0.12);
+    --shadow-elevation-high:
+      0.1px 0.9px 0.8px hsl(var(--shadow-color) / 0.16),
+      0.3px 2.6px 2.3px -0.5px hsl(var(--shadow-color) / 0.15),
+      0.6px 5px 4.5px -1px hsl(var(--shadow-color) / 0.13),
+      1.1px 9.4px 8.4px -1.5px hsl(var(--shadow-color) / 0.12),
+      1.9px 16.9px 15.1px -2px hsl(var(--shadow-color) / 0.11),
+      3.2px 28.7px 25.6px -2.6px hsl(var(--shadow-color) / 0.09),
+      5.2px 46px 41px -3.1px hsl(var(--shadow-color) / 0.08),
+      7.9px 69.9px 62.3px -3.6px hsl(var(--shadow-color) / 0.06),
+      11.5px 101.7px 90.6px -4.1px hsl(var(--shadow-color) / 0.05);
+  }

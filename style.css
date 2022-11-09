@@ -111,7 +111,7 @@ a {
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
 }
 
 .projects__image {
@@ -121,7 +121,7 @@ a {
 }
 
 .projects__container {
-    border: 1px red solid;
+    /* border: 1px red solid; */
     padding: 2em;
     display: flex;
     justify-content: flex-start;

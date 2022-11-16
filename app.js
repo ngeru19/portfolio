@@ -1,7 +1,20 @@
-function show(shown, hidden) {
-    document.getElementById(shown).style.display='flex';
-    document.getElementById(hidden).style.display='none';
-    return false;
-};
+let btns = document.querySelectorAll('.nav__item');
 
-document.querySelector('.intro').addEventListener('click', show())
+for (let btn of btns) {
+    btn.addEventListener('click', (event) => {
+        const target = event.target;
+        const current = document.querySelector('.current');
+        if (current) {
+            current.classList.remove('current')
+        } 
+        target.classList.add('current');
+        let containers = document.querySelectorAll('.container');
+        for (let container of containers) {
+            if(container.getAttribute('data-number') === btn.getAttribute('data-number')) {
+                container.style.display = 'flex'
+            } else {
+                container.style.display = 'none'
+            }
+        }
+    })
+}

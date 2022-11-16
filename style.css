@@ -6,16 +6,18 @@
 
 /*  variables__colors */
 
-    --bg: #dae3de;
-    --primary_color: #1e363e;
-    --accent_first: #f8503e;
-    --accent_second: #fde8df;
+    --bg: #fff;
+    --bg_small: #EAEAEA;
+    --primary_color: #191919;
+    --accent_first: #22577a;
+    --accent_second: #ff8c00;
 
 /*  variables__font-sizes */
 
     --bigger: 2.5rem;
     --normal: 1.5rem;
     --small: 1.1rem;
+
 }
 
 *, 
@@ -54,27 +56,36 @@ a {
 
 /* ------------------------------ HEADER ------------------------------ */
 
+
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    /* border: 1px red solid; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
 }
 
 .nav__item {
-    margin: 1em;
+    margin: .5em 0 0 0;
     cursor: pointer;
-    padding: .5em 1em;
+    padding: .5em 1em 0 1em;
     border-radius: .5em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 1rem;
 }
 
 .current {
-    color: var(--accent_first);
+    color: var(--accent_second);
 }
 
 .nav__item:hover {
-    color: var(--accent_first);
+    color: var(--accent_second);
 }
+
 
 /* ------------------------------ PAGE CONTAINER ------------------------------ */
 
@@ -82,10 +93,35 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 78%;
+    width: 95%;
     margin: 0 auto;
     /* border: red solid 1px; */
-    padding: 1em 0;
+    padding: 1em;
+    /* background-color:#DDFFBC; */
+    height: 100%;
+
+}
+
+.main {
+    
+    width: 82%;
+    background-color: var(--bg_small);
+    border-radius: .75em;
+    box-shadow: var(--shadow-elevation-medium);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .69em; 
+    height: 86%;
+    /* justify-content: center;
+    align-items: center; */
+
+    /* center container */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* ------------------------------ INTRO ------------------------------ */
@@ -95,7 +131,11 @@ a {
 }
 
 .intro__img {
-    width: 100%;
+    width: 75%;
+    border-radius: 50%;
+    align-self: center;
+    border: 1px var(--accent_first) solid;
+    margin-left: 2em;
 }
 
 .intro__resume {
@@ -118,6 +158,7 @@ a {
     width: 100%;
     border-radius: .2em;
     box-shadow: var(--shadow-elevation-high);
+    margin-top: 1em;
 }
 
 .projects__container {
@@ -140,6 +181,14 @@ a {
     align-items: center;
 }
 
+.projects__stack__img:last-child {
+    margin-right: auto;
+}
+
+.projects__header {
+    margin: 0;
+}
+
 /* ------------------------------ ABOUT ME ------------------------------ */
 
 .about__description {
@@ -150,16 +199,16 @@ a {
 
 .about__terminal {
     flex: 1 1 0px;
-    font-size: 0.75rem;
+    font-size: .3rem;
     /* box-shadow: var(--shadow-elevation-high); */
     
 }
 
 .terminal__header {
-    background-color: #fff; /* C9D5E3 */
+    background-color: #C9D5E3; /* C9D5E3 */
     padding: .5em;
-    border-top-left-radius: .65em;
-    border-top-right-radius: .65em;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
     margin: 0 auto;
     margin-top: 5em;   
     display: flex;
@@ -171,8 +220,8 @@ a {
     padding: 2em;
     padding-top: .5em;
     font-size: 1.1rem;
-    border-bottom-left-radius: .65em;
-    border-bottom-right-radius: .65em;
+    border-bottom-left-radius: .8em;
+    border-bottom-right-radius: .8em;
 }
 
 .terminal__button {
@@ -249,8 +298,8 @@ a {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    left: 4vw;
-    bottom: 35vh;
+    left: 3vw;
+    bottom: 30vh;
 
 }
 
@@ -264,7 +313,7 @@ a {
 
 .contacts__icon {
     padding: .25em;
-    width: 2.25em;
+    width: 2.5em;
     filter: grayscale(90%);
 }
 
@@ -276,6 +325,14 @@ a {
 .contacts__subtitles {
     font-size: .75rem;
     display: none;
+}
+
+.footer {
+    font-size: 1rem;
+    position: fixed;
+    right: 3vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
 /* ------------------------------ SECTION ------------------------------ */
@@ -316,3 +373,19 @@ a {
       -12.3px 15.4px 29.6px hsl(var(--shadow-color) / 0.55),
       -16.9px 21.3px 40.8px hsl(var(--shadow-color) / 0.65);
   }
+/* 
+.intro {
+    display: flex;
+}
+
+.about {
+    display: none;
+}
+
+.projects {
+    display: none;
+}
+ */
+.container:not(:nth-child(2)) {
+    display: none;
+}

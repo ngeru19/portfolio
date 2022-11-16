@@ -11,132 +11,130 @@
     <title>Index</title>
 </head>
 <body>
-    
-    <header class="header">
+
+    <main class="main">
+
         <nav class="nav">
-            <a class="nav__item link current" onclick="show('intro', 'about')">Интро</a>
-            <a class="nav__item link">Проекты</a>
-            <a class="nav__item link" onclick="show('about', 'intro')">Обо мне</a>
+            <a class="nav__item link current" data-number="1">Интро</a>
+            <a class="nav__item link" data-number="2">Проекты</a>
+            <a class="nav__item link" data-number="3">Обо мне</a>
         </nav>
-    </header>
 
-    <section class="container intro" id='intro'>
-        <section class="intro__info">
-            <h2 class="intro__header">Сәлем, <br> меня зовут Улан</h2>
-            <p class="intro__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis animi accusantium mollitia molestiae sunt ut nobis cumque nostrum eum atque, consequatur, eius natus iste nulla adipisci sapiente explicabo dignissimos. Consectetur!</p>
-            <a class="intro__resume link">Резюме</a>
+        <section class="container intro" data-number="1" id='intro'>
+            <section class="intro__info">
+                <h2 class="intro__header">Сәлем, <br> меня зовут Улан</h2>
+                <p class="intro__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis animi accusantium mollitia molestiae sunt ut nobis cumque nostrum eum atque, consequatur, eius natus iste nulla adipisci sapiente explicabo dignissimos. Consectetur!</p>
+                <a class="intro__resume link">Резюме</a>
+            </section>
+            <section class="intro__image">
+                <img class="intro__img" src="./assets/images/selfie.jpg" alt="ноутбук">
+            </section>
         </section>
-        <section class="intro__image">
-            <img class="intro__img" src="./assets/images/coding.png" alt="ноутбук">
-        </section>
-    </section>
 
-    <section class="container about" id="about">
-       
-        <section class="about__terminal">
-            <div class="terminal__header">
-                <button class="terminal__button terminal__button--red"></button>
-                <button class="terminal__button terminal__button--yellow"></button>
-                <button class="terminal__button terminal__button--green"></button>
-            </div>
-            <div class="terminal__body">
-                <div class="terminal__unit">
-                    <p class="terminal__unit__header">> my.contactInfo</p>
-                    <p class="terminal__unit__body">[ "<a href="#">ngeru19@gmail.com</a>", "<a href="#">LinkedIn</a>", 
-                        "<a href="#">github</a>" ]</p>
+        <section class="container projects" data-number="2" id='projects'>
+            <section class="projects__container">
+                <h2 class="projects__header">Baffet</h2>
+                <img class="projects__image" src="./assets/images/baffet.png">
+                <p class="projects__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam! Dolorum quam molestiae ducimus a repellendus ut nemo, voluptatum expedita placeat rem magni quaerat, quibusdam reprehenderit unde tenetur, consequatur nihil?</p>
+                <div class="projects__stack">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="35" height="35"/>&nbsp;
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title="CSS3" alt="CSS" width="35" height="35"/>&nbsp;
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35" height="35"/>&nbsp;
+                    <a>Подробнее</a>
                 </div>
-                <div class="terminal__unit">
-                    <p class="terminal__unit__header">> my.resume</p>
-                    <p class="terminal__unit__body">"<a href="#">resume.pdf</a>"</p>
+            </section>
+            
+            <section class="projects__container">
+                <h2 class="projects__header">Dabble</h2>
+                <img class="projects__image" src="./assets/images/dabble.png"   >
+                <p class="projects__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam! Dolorum quam molestiae ducimus a repellendus ut nemo, voluptatum expedita placeat rem magni quaerat, quibusdam reprehenderit unde tenetur, consequatur nihil?</p>
+                <div class="projects__stack">
+                    <img class="projects__stack__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="35" height="35"/>&nbsp;
+                    <img class="projects__stack__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title="CSS3" alt="CSS" width="35" height="35"/>&nbsp;
+                    <img class="projects__stack__img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35" height="35"/>&nbsp;
+                    <a class="projects__stack__more">Подробнее</a>
                 </div>
-                <div class="terminal__unit">
-                    <p class="terminal__unit__header">> my.stack</p>
-                    <p class="terminal__unit__body">[ "JavaScript", "CSS", "SASS", "HTML", "React", "Redux" ]</p>
+            </section>
+
+        </section>
+
+        <section class="container about" data-number="3" id="about">
+        
+            <section class="about__terminal">
+                <div class="terminal__header">
+                    <button class="terminal__button terminal__button--red"></button>
+                    <button class="terminal__button terminal__button--yellow"></button>
+                    <button class="terminal__button terminal__button--green"></button>
                 </div>
-                <div class="terminal__unit">
-                    <p class="terminal__unit__header">> my.otherKeyWords</p>
-                    <p class="terminal__unit__body">[ "Git", "Webpack", "Unit-testing" ]</p>
-                <div class="terminal__unit">
-                    <p class="terminal__unit__header">> my.lastJob</p>
-                    <p class="terminal__unit__body">{ position: "BI analyst", company: "Kaspi.kz"}</p>
+                <div class="terminal__body">
+                    <div class="terminal__unit">
+                        <p class="terminal__unit__header">> my.contactInfo</p>
+                        <p class="terminal__unit__body">[ "<a href="#">ngeru19@gmail.com</a>", "<a href="#">LinkedIn</a>", 
+                            "<a href="#">github</a>" ]</p>
+                    </div>
+                    <div class="terminal__unit">
+                        <p class="terminal__unit__header">> my.resume</p>
+                        <p class="terminal__unit__body">"<a href="#">resume.pdf</a>"</p>
+                    </div>
+                    <div class="terminal__unit">
+                        <p class="terminal__unit__header">> my.stack</p>
+                        <p class="terminal__unit__body">[ "JavaScript", "CSS", "SASS", "HTML", "React", "Redux" ]</p>
+                    </div>
+                    <div class="terminal__unit">
+                        <p class="terminal__unit__header">> my.otherKeyWords</p>
+                        <p class="terminal__unit__body">[ "Git", "Webpack", "Unit-testing" ]</p>
+                    <div class="terminal__unit">
+                        <p class="terminal__unit__header">> my.lastJob</p>
+                        <p class="terminal__unit__body">{ position: "BI analyst", company: "Kaspi.kz"}</p>
+                    </div>
+                    <div class="terminal__unit__header" id="header"><p>> </p>
+                        <div id="cursor"></div>
+                    </div>
+        
                 </div>
-                <div class="terminal__unit__header" id="header"><p>> </p>
-                    <div id="cursor"></div>
-                </div>
+            </section>   
+            
+            <section class="about__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae saepe molestiae ratione, dicta numquam necessitatibus. Dolorum repudiandae saepe quas molestiae accusamus dolore, impedit ad harum a rerum mollitia blanditiis?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus earum dignissimos debitis labore sed doloribus odio vero, blanditiis omnis quia eius repudiandae facilis, quaerat adipisci! Veniam doloribus eveniet rerum natus.
+                </p>
+            </section>
+            
+        </section>  
     
-            </div>
-        </section>   
-        
-         <section class="about__description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae saepe molestiae ratione, dicta numquam necessitatibus. Dolorum repudiandae saepe quas molestiae accusamus dolore, impedit ad harum a rerum mollitia blanditiis?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus earum dignissimos debitis labore sed doloribus odio vero, blanditiis omnis quia eius repudiandae facilis, quaerat adipisci! Veniam doloribus eveniet rerum natus.
-            </p>
-        </section>
-        
-    </section>
-
-    <section class="container projects" id='projects'>
-        <section class="projects__container">
-            <h2 class="projects__header">Baffet</h2>
-            <img class="projects__image" src="./assets/images/baffet.png">
-            <p class="projects__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam! Dolorum quam molestiae ducimus a repellendus ut nemo, voluptatum expedita placeat rem magni quaerat, quibusdam reprehenderit unde tenetur, consequatur nihil?</p>
-            <div class="projects__stack">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="35" height="35"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title="CSS3" alt="CSS" width="35" height="35"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35" height="35"/>&nbsp;
-                <a>Подробнее</a>
-            </div>
-        </section>
-        
-        <section class="projects__container">
-            <h2 class="projects__header">Dabble</h2>
-            <img class="projects__image" src="./assets/images/memory.png" style="width: 350px;">
-            <p class="projects__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquam! Dolorum quam molestiae ducimus a repellendus ut nemo, voluptatum expedita placeat rem magni quaerat, quibusdam reprehenderit unde tenetur, consequatur nihil?</p>
-            <div class="projects__stack">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title="HTML5" alt="HTML" width="35" height="35"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title="CSS3" alt="CSS" width="35" height="35"/>&nbsp;
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35" height="35"/>&nbsp;
-                <a>Подробнее</a>
-            </div>
-        </section>
-
-    </section>
+    </main>
 
 
 
     <aside>
         <section class="contacts">
             <div class="contacts__item">
-                <p class="contacts__subtitles">Посмотреть github</p>
                 <a class="contacts__link" href="https://github.com/ngeru19" target="_blank">
-                    <img class="contacts__icon" src="./assets/icons/github.png" alt="логотип гитхаба">
+                    <img class="contacts__icon" data-descr="посмотреть гитхаб" src="./assets/icons/github.png" alt="логотип гитхаба">
                 </a>
             </div>
             <div class="contacts__item">
-                <p class="contacts__subtitles">Написать письмо</p>
                 <a class="contacts__link">
                     <img class="contacts__icon" src="./assets/icons/envelope.png" alt="иконка похожая на конверт">
                 </a>
             </div>
             <div class="contacts__item">    
-                <p class="contacts__subtitles">Написать в линкедин</p>
                 <a class="contacts__link">
                     <img class="contacts__icon" src="./assets/icons/linkedin.png" alt="логотип линкедин">
                 </a>
             </div>
             <div class="contacts__item">
-                <p class="contacts__subtitles">Написать в телеграм</p>
                 <a class="contacts__link">
                     <img class="contacts__icon" src="./assets/icons/telegram.png" alt="логотип телеграма">
                 </a>
             </div>
-            <!-- <div class="contacts__item">
-                <p class="contacts__subtitles">Отправить ворона мэйстеру</p>
+            <div class="contacts__item">
                 <a class="contacts__link">
-                    <img class="contacts__icon" src="./assets/icons/crow.png" alt="иконка похожая на конверт"> -->
-                <!-- </a> -->
+                    <img class="contacts__icon" src="./assets/icons/crow.png" alt="иконка похожая на конверт">
+                </a>
         </section>
     </aside>
+
     <!-- <section class="controls">
         <div class="next">
             <a class="next__btn">Проекты</a>

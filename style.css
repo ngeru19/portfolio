@@ -14,10 +14,13 @@
 
 /*  variables__font-sizes */
 
-    --bigger: 2.5rem;
-    --normal: 1.5rem;
-    --small: 1.1rem;
-
+    --fontXXS: .5rem;
+    --fontXS: .75rem;
+    --fontS: 1rem;
+    --fontM: 1.2rem; 
+    --fontL: 1.5rem;
+    --fontXL: 2rem;
+    --fontXXL: 2.5rem;
 }
 
 *, 
@@ -40,16 +43,16 @@ body {
 
 body {
     font-family: 'Noto Serif', serif;
-    font-size: var(--normal);
+    font-size: var(--fontM);
 }
 
 h2 {
-    font-size: var(--bigger);
+    font-size: var(--fontXXL);
     font-weight: 500;
 }
 
 a {
-    font-size: var(--small);
+    font-size: var(--fontS);
 }
 
 
@@ -65,17 +68,28 @@ a {
     /* border: 1px red solid; */
     width: 90%;
     margin: 0 auto;
-    margin-top: 1em;
+    padding: 0;
+}
+
+
+.nav__logo {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-family: 'Sacramento', cursive;
+    font-size: var(--fontXXL);
+    margin-left: .75em;
+    color: var(--accent_first);
 }
 
 .nav__item {
     margin: .5em 0 0 0;
     cursor: pointer;
-    padding: .5em 1em 0 1em;
+    padding: 0 1em;
     border-radius: .5em;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    font-size: 1rem;
+    font-size: var(--fontM);
 }
 
 .current {
@@ -96,7 +110,7 @@ a {
     width: 95%;
     margin: 0 auto;
     /* border: red solid 1px; */
-    padding: 1em;
+    padding: 0 1em;
     /* background-color:#DDFFBC; */
     height: 100%;
 
@@ -145,6 +159,10 @@ a {
     border-radius: 1em;
 }
 
+.intro__intro {
+    margin-bottom: 2em;
+}
+
 /* ------------------------------ PROJECTS ------------------------------ */
 
 .projects {
@@ -171,7 +189,7 @@ a {
 }
 
 .projects__description {
-    font-size: 1rem;
+    font-size: var(--fontS);
     margin-top: 2em;
 }
 
@@ -181,25 +199,28 @@ a {
     align-items: center;
 }
 
-.projects__stack__img:last-child {
-    margin-right: auto;
-}
-
 .projects__header {
     margin: 0;
+}
+
+.projects__stack__icon {
+    width: 1.25em;
+    height: 1.25em;
 }
 
 /* ------------------------------ ABOUT ME ------------------------------ */
 
 .about__description {
-    flex: 1 1 0px;
-    font-size: var(--normal);
+    flex: 1 1 0;
+    font-size: var(--fontM);
     margin-left: 1em;
+    padding: 1em;
 }
 
 .about__terminal {
-    flex: 1 1 0px;
+    flex: 1 1 0;
     font-size: .3rem;
+    /* border: 1px red solid; */
     /* box-shadow: var(--shadow-elevation-high); */
     
 }
@@ -219,7 +240,7 @@ a {
     margin: 0 auto;
     padding: 2em;
     padding-top: .5em;
-    font-size: 1.1rem;
+    font-size: var(--fontS);
     border-bottom-left-radius: .8em;
     border-bottom-right-radius: .8em;
 }
@@ -266,6 +287,10 @@ a {
 }
 
 .terminal__unit__body > a {
+    font-size: var(--fontS);
+}
+
+.terminal__unit__body > a {
     color: aquamarine;
     text-decoration: none;
 }
@@ -278,11 +303,11 @@ a {
   
 #cursor {
     background: white;
-    line-height: 1.2rem;
+    line-height: 1.2;
     margin-left: .3em;
     -webkit-animation: blink 0.9s infinite;
     width: .3rem;
-    height: 1rem;
+    height: var(--fontS);
 }
 
 @-webkit-keyframes blink {
@@ -291,6 +316,10 @@ a {
     100% {background: #5a5d7a}
   }
 
+  /* .about {
+    margin-bottom: 2em;
+  } */
+
 /* ------------------------------ ASIDE ------------------------------ */
 
 .contacts {
@@ -298,7 +327,7 @@ a {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    left: 3vw;
+    left: 1.5vw;
     bottom: 30vh;
 
 }
@@ -313,8 +342,8 @@ a {
 
 .contacts__icon {
     padding: .25em;
-    width: 2.5em;
-    filter: grayscale(90%);
+    width: 2.25em;
+    filter: grayscale(75%);
 }
 
 .contacts__icon:hover {
@@ -322,18 +351,11 @@ a {
     padding: 0;
 }
 
-.contacts__subtitles {
+/* .contacts__subtitles {
     font-size: .75rem;
     display: none;
-}
+} */
 
-.footer {
-    font-size: 1rem;
-    position: fixed;
-    right: 3vw;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-}
 
 /* ------------------------------ SECTION ------------------------------ */
 
@@ -388,4 +410,20 @@ a {
  */
 .container:not(:nth-child(2)) {
     display: none;
+}
+
+@media (max-width: 1200px) {
+	:root {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 992px) {	
+	:root {
+        font-size: .75rem;
+    }
+}
+@media (max-width: 768px) {
+	:root {
+        font-size: .6rem;
+    }
 }

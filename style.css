@@ -436,6 +436,8 @@ a {
     .nav__logo {
         display: block;
         font-size: 4.5rem;
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .main {
@@ -446,27 +448,66 @@ a {
         background-color: var(--bg_small);
     }
 
-    .nav__item {
-        display: none;
-    }
-
     #about, #projects {
         display: flex;
     }
+
+    .nav__item__open {
+        display: flex;
+        font-size: 3rem;
+    }
+
+    .nav__items {
+        display: none;
+    }
+
+    .nav__item:first-child {
+        margin-top: 3em;
+    }
+
+    .nav__items__open {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.77);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        width: 75%;
+        height: 100vh;
+        color: var(--accent_first);
+        z-index: 2;
+        transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
+    }
+
+    .nav {
+        /* border: 1px red solid; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         /* border: 1px solid red; */
-        margin-top: 3em;
+        margin-bottom: 13em;
     }
 
     .container__header {
         display: block;
         font-weight: 400;
         color: var(--accent_second);
-        font-size: 2.5rem;
+        font-size: 1.75rem;
         /* border: 1px red solid; */
         align-self: flex-start;
         margin-top: 2.5em;
@@ -477,19 +518,17 @@ a {
         align-self: center;
     }
 
-    .nav {
-        justify-content: center;
-        align-items: center;
-    }
+   
 
     .menu-btn {
-        position: relative;
+        align-self: flex-end;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         width: 4em;
         height: 4em;
         cursor: pointer;
         transition: all .5s ease-in-out;
+        z-index: 5;
     }
 
     .menu-btn__burger {

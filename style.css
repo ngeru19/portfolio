@@ -420,7 +420,7 @@ a {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 666px) {
 	:root {
         font-size: .6rem;
     }

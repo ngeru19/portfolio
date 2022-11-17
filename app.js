@@ -1,4 +1,4 @@
-let btns = document.querySelectorAll('.nav__item');
+const btns = document.querySelectorAll('.nav__item');
 
 for (let btn of btns) {
     btn.addEventListener('click', (event) => {
@@ -8,7 +8,7 @@ for (let btn of btns) {
             current.classList.remove('current')
         } 
         target.classList.add('current');
-        let containers = document.querySelectorAll('.container');
+        const containers = document.querySelectorAll('.container');
         for (let container of containers) {
             if(container.getAttribute('data-number') === btn.getAttribute('data-number')) {
                 container.style.display = 'flex'
@@ -18,3 +18,15 @@ for (let btn of btns) {
         }
     })
 }
+
+const menuBtn =document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+});

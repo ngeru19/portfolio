@@ -470,6 +470,26 @@ a {
         box-shadow: none;
     }
 
+    .container__header {
+        display: block;
+        font-size: var(--fontL);
+        text-align: center;
+        margin-top: 15em;
+        margin-bottom: 5em;
+        color: var(--accent_second);
+        font-weight: 600;
+    }
+
+    .container__header::before,
+    .container__header::after {
+        display: inline-block;
+        content: "";
+        border-top: .3rem solid var(--accent_second);
+        width: 10vw;
+        margin: 0 2rem;
+        transform: translateY(-.25rem);
+    }
+
     /*************** NAV ***************/
 
     .nav__items {
@@ -497,9 +517,14 @@ a {
     #intro {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-top: 5em;
     }
 
+    .intro__resume {
+        justify-self: center;
+        padding: 1em;
+        margin: 0 auto;
+    }
 
     /*************** PROJECTS ***************/
     

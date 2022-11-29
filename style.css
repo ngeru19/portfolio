@@ -462,8 +462,8 @@ a {
 
     body {
         background-color: var(--bg_small);
-        /* display: flex;
-        flex-direction: column-reverse; */
+        display: flex;
+        flex-direction: column;
     }
     
     .main {
@@ -504,12 +504,8 @@ a {
 
     /*************** CONTACTS ***************/
 
-
     .contacts {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        border: var(--check);
+        display: none;
     }
 
     /*************** INTRO ***************/
@@ -520,10 +516,20 @@ a {
         margin-top: 5em;
     }
 
+    .intro__info {
+        display: flex;
+        flex-direction: column;
+    }
+
     .intro__resume {
-        justify-self: center;
-        padding: 1em;
         margin: 0 auto;
+        margin-top: 2em;
+        font-size: var(--fontL);
+    }
+
+    .intro__image > img {
+        width: 60%;
+        margin-top: 4em;
     }
 
     /*************** PROJECTS ***************/
@@ -544,6 +550,10 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .about__terminal {
+        margin: 0 auto;
     }
 
 }

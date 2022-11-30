@@ -491,7 +491,7 @@ a {
         font-size: var(--fontXXL);
         font-weight: 700;
         color: var(--accent_first);
-        margin: 0;
+        margin: 2em 0;
     }
 
 

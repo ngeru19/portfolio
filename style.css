@@ -7,7 +7,7 @@
 /*  variables__colors */
 
     --bg: #fff;
-    --bg_small: #EAEAEA;
+    --bg_small: #e0e0e0;
     --primary_color: #191919;
     --accent_first: #22577a;
     --accent_second: #ff8c00;
@@ -119,6 +119,8 @@ a {
     padding: 0 1em;
     /* background-color:#DDFFBC; */
     height: 100%;
+    transform: scale(1);
+    transition: 0.3s all;
 
 }
 
@@ -224,7 +226,8 @@ a {
     color: #fff;
     border-radius: 1em;
     font-size: var(--fontXS);
-    margin-left: auto;
+    margin-left: 1em;
+    text-decoration: none;
 }
 
 .projects__stack__more:hover {
@@ -241,6 +244,10 @@ a {
     width: 1.5em;
     height: 1.5em;
     margin-left: .5em;
+}
+
+.icon__last {
+    margin-right: auto;
 }
 
 .projects__stack__icon:hover {

@@ -489,6 +489,8 @@ a {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
         gap: 5em;
+        border: 1px solid green;
+        padding-top: 0;
     }
 
     /********** CONTAINER **********/
@@ -504,7 +506,12 @@ a {
 
     .container {
         margin-top: 0;
+        /* border: 1px solid red; */
+    }
+
+    .intro {
         border: 1px solid red;
+        margin-top: 0;
     }
 
     /********** NAV **********/
@@ -523,8 +530,6 @@ a {
     .nav__logo {
         font-size: 5rem;
         margin: 0 auto;
-        margin-top: -7em;
-        margin-bottom: -4em;
     }
 
     /********** INTRO **********/

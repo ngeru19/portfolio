@@ -138,6 +138,7 @@ a {
     flex-direction: column;
     padding-bottom: .69em; 
     height: 86%;
+    max-width: 1400px;
     /* justify-content: center;
     align-items: center; */
 
@@ -480,6 +481,7 @@ a {
         gap: 4em;
         padding: 0;
         height: auto;
+        /* border: 1px solid blue; */
     }
     
     .main {
@@ -488,9 +490,10 @@ a {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, auto);
-        gap: 5em;
-        border: 1px solid green;
+        /* gap: 5em; */
+        /* border: 1px solid green; */
         padding-top: 0;
+        top: 45%;
     }
 
     /********** CONTAINER **********/
@@ -510,7 +513,7 @@ a {
     }
 
     .intro {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 0;
     }
 
@@ -520,7 +523,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid green;
+        /* border: 1px solid green; */
     }
 
     .nav__items {
@@ -618,9 +621,6 @@ a {
         filter: none;
         margin: 5em 1em;
     }
-
-
-    /********** CONTACTS **********/
 }
 
 
